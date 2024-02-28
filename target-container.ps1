@@ -6,7 +6,7 @@ Write-Output "<ConfigData><_NT_SOURCE_PATH /><_NT_SYMBOL_PATH>SRV*%TEMP%\SymbolC
 Write-Output "Cleaning up old log file..."
 if (Test-Path log.txt) { Remove-Item log.txt }
 Write-Output "Running PerfView..."
-./PerfView merge Host.etl.zip -ImageIDsOnly /logFile=log.txt
+./PerfView merge host.etl.zip -ImageIDsOnly /logFile=log.txt
 Write-Output "*** Press CTRL+C when the process is complete, the line will start with [DONE ***"
 do {
     Start-Sleep -Seconds 1

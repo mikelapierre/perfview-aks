@@ -20,6 +20,6 @@
    - [DONE 14:55:01 SUCCESS: PerfView /logFile=log.txt /maxCollectSec=30 /threadTime /EnableEventsInContainers collect]
  - Hit Ctrl+C to let the script continue
  - When the merging is done, the output will stop again and should end with a line looking like this:
-   - [DONE 14:57:53 SUCCESS: PerfView merge Host.etl.zip -ImageIDsOnly /logFile=log.txt]
+   - [DONE 14:57:53 SUCCESS: PerfView merge host.etl.zip -ImageIDsOnly /logFile=log.txt]
  - Hit Ctrl+C to let the script continue
  - When the script outputs Done. the process is complete and you can analyze the merged.etl.zip file with PerfView

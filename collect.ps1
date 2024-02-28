@@ -1,10 +1,10 @@
 $ErrorActionPreference = "Stop"
 
-$osVersion = 1809 # ltsc2022
-$nodeName = "akswinnon00000t"
-$collectSec = 30
-$podNS = "msdtcpoc"
-$podName = "msdtcpoc-wcf-0"
+$osVersion = 1809 # Use 1809 for Windows Server 2019 and ltsc2022 for Windows Server 2022
+$nodeName = ""    # The name of the Windows node to collect, this should be the same the container is running on
+$collectSec = 30  # The number of seconds to collect the PerfView log
+$podNS = ""       # The namspace the pod is running in
+$podName = ""     # The name of of the pod
 
 Write-Output "Is the following context correct (Y/N)?"
 kubectl config current-context
