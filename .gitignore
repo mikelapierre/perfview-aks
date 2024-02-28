@@ -1,3 +1,4 @@
 .vscode
 *.etl.zip
 *.tmp.ps1
+*.exe
